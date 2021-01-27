@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+  background-color: white;
+  padding: 10px;
+  text-align: center;
+  color: #c4fb6d;
+  text-shadow: 3px 4px 4px #e84a5f;
+  background-image: url('https://images.unsplash.com/photo-1541890289-b86df5bafd81?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60'); 
+  background-size:cover;
+  background-position:bottom;
+}
+div.header p {
+color: #c4fb6d;
+text-shadow: 3px 4px 4px #ffa5b0;
+}
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #436f8a;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #79d70f;
+  text-align: center;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #a0c1b8;
+  color: #fff;
+  font-weight: bold;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  /*float: left;*/
+  /*width: 33.33%;*/
+  font-size: 16px;
+  padding: 15px;
+  color: #c4fb6d;
+  float: left
+   
+  
+}
+
+.column.Opportunities {  
+  width:15%;
+}
+
+.column.Visions {
+  width: 65%;
+}
+
+.column.Contact Us {
+  width: 20%;
+}
+
+/* Clear floats after the columns 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;*/
+}
+.row {
+	background-image: url('https://images.unsplash.com/photo-1563314703-7289dd2702bf?ixlib=rb-1.2.1&auto=format&fit=crop&w=972&q=80'); background-size: cover;
+	display: flex;
+	flex-wrap: wrap;
+}
+div.column p {
+  font-size: 18px;
+	}
+	div.header p {
+  font-size: 20px;
+	}
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+  .column.Opportunities,.column.Future, .column.Visions {
+    width: 100%!important;
+  }
+ 
+  div.column p {
+  font-size: 18px;
+	}
+}
+
+.footer {
+  background-color: #436f8a;
+  padding: 12px;
+  text-align: center;
+  font-size: 10px;
+  color: #eee;
+  font-style: monospace;
+  text-shadow: 1px 2px 2px #f2aaaa;
+  
+}
